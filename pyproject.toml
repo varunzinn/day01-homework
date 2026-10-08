@@ -1,0 +1,20 @@
+[project]
+name = "nifty-quote-app"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Varun Sardana", email = "varunzinn@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "pandas>=3.0.6",
+    "yfinance>=1.7.0",
+]
+
+[project.scripts]
+nifty-quote-app = "nifty_quote_app:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
